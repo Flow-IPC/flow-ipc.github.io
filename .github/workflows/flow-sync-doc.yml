@@ -7,9 +7,21 @@ on:
 jobs:
   update-docs:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+
+    # Write access is required later, so at least 1 way to allow it is under Settings/Actions/General
+    # set "Workflow permissions" to "Read and write permissions" (may need similar org-wide change first).
+    - name: Checkout Pages repo (the destination)
+      uses: actions/checkout@v4
+      with:
+        path: 'dst_repo'
+
+    - name: Checkout Source repo (the source)
+      uses: actions/checkout@v4
+      with:
+        repository: 'Flow-IPC/flow'
+        path: 'src_repo'
 
     - name: Mock Update Documentation
       run: |
@@ -18,6 +30,7 @@ jobs:
 
     - name: Commit and push if there are changes
       run: |
+        cd dst_repo
         # These values informally recommended in:
         #   https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
         git config user.name github-actions
