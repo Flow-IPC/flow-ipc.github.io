@@ -34,6 +34,7 @@ jobs:
 
     - name: Replace Pages (destination) docs with copy of Code (source) docs
       run: |
+        # Replace Pages (destination) docs with copy of Code (source) docs.
         cd dst_repo
         DOC_DIR=doc/flow/versions
         BRANCH=main
