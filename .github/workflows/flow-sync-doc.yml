@@ -1,4 +1,4 @@
-name: Flow-IPC pipeline
+name: Flow sync-docs pipeline
 
 on:
   # To create the button that runs a workflow manually:
