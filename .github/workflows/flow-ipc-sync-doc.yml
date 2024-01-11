@@ -1,7 +1,4 @@
-name: Flow sync-documentation pipeline
-
-# TODO: This is almost a copy/paste of ./flow-ipc-sync-doc.yml, just applied to different repo.
-# Add some kind of code reuse ideally.  For now keeping comments light in this one, as it mirrors the other one.
+name: Flow-IPC sync-documentation pipeline
 
 on:
   # An API request can trigger us; so Code (source) repo can invoke us after generating docs and checking those
@@ -17,29 +14,27 @@ jobs:
 
     steps:
 
-    # Write access is required later, so at least 1 way to allow it is under Settings/Actions/General
-    # set "Workflow permissions" to "Read and write permissions" (may need similar org-wide change first).
     - name: Checkout Pages repo (the destination)
       uses: actions/checkout@v4
       with:
         path: 'dst_repo'
-        sparse-checkout: 'doc/flow/versions'
+        sparse-checkout: 'doc/flow-ipc/versions'
 
     - name: Checkout Code repo (the source)
       uses: actions/checkout@v4
       with:
-        repository: 'Flow-IPC/flow'
+        repository: 'Flow-IPC/ipc'
         path: 'src_repo'
         sparse-checkout: 'doc/ipc_doc'
 
     - name: Replace Pages (destination) docs with copy of Code (source) docs
       run: |
         cd dst_repo
-        DOC_DIR=doc/flow/versions
+        DOC_DIR=doc/flow-ipc/versions
         BRANCH=main
         rm -rf $DOC_DIR/$BRANCH
         mkdir -p $DOC_DIR
-        cp -r ../src_repo/doc/flow_doc $DOC_DIR/$BRANCH
+        cp -r ../src_repo/doc/ipc_doc $DOC_DIR/$BRANCH
         # These values informally recommended in:
         #   https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
         git config user.name github-actions

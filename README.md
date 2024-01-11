@@ -20,4 +20,5 @@ Both sets of documentation (in-repo and online) are generated/deployed automatic
 
 Here is the online documentation for your immediate perusal.
 
-  - `main` branch tip [documentation](./doc/versions/main/index.html)
+  - `main` branch tip ([Flow-IPC documentation](./doc/flow-ipc/versions/main/index.html) |
+                       [Flow documentation](./doc/flow/versions/main/index.html))
