@@ -1,6 +1,10 @@
-name: Flow sync-docs pipeline
+name: Flow sync-documentation pipeline
 
 on:
+  # An API request can trigger us; so Code (source) repo can invoke us after generating docs and checking those
+  # in to itself.
+  repository_dispatch:
+    types: [flow-sync-doc-event]
   # To create the button that runs a workflow manually:
   workflow_dispatch:
 
