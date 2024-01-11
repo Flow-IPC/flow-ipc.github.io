@@ -17,24 +17,25 @@ jobs:
       with:
         path: 'dst_repo'
 
-    - name: Checkout Source repo (the source)
+    - name: Checkout Code repo (the source)
       uses: actions/checkout@v4
       with:
         repository: 'Flow-IPC/flow'
         path: 'src_repo'
 
-    - name: Mock Update Documentation
-      run: |
-        mkdir -p doc/versions/main
-        echo "<h1>Hello, World!</h1>" >> doc/versions/main/index.html
-
-    - name: Commit and push if there are changes
+    - name: Replace Pages (destination) docs with copy of Code (source) docs
       run: |
         cd dst_repo
+        DOC_DIR=doc/versions
+        BRANCH=main
+        rm -rf $DOC_DIR/$BRANCH
+        mkdir -p $DOC_DIR
+        cp -r ../src_repo/doc/flow_doc $DOC_DIR/$BRANCH
         # These values informally recommended in:
         #   https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git add doc
-        git commit -m 'Update documentation' || exit 0   # Exit gracefully if no changes
+        git rm -r --cached $DOC_DIR/$BRANCH || echo "No [$DOC_DIR/$BRANCH] currently checked in; no problem."
+        git add $DOC_DIR/$BRANCH
+        git commit -m 'Sync documentation from code repo to Pages repo.'
         git push origin main
