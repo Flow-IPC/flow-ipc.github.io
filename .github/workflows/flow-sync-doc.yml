@@ -30,7 +30,7 @@ jobs:
       with:
         repository: 'Flow-IPC/flow'
         path: 'src_repo'
-        sparse-checkout: 'doc/ipc_doc'
+        sparse-checkout: 'doc/flow_doc'
 
     - name: Replace Pages (destination) docs with copy of Code (source) docs
       run: |
