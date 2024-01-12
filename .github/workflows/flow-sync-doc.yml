@@ -47,5 +47,5 @@ jobs:
         git config user.email github-actions@github.com
         git rm -r --cached $DOC_DIR/$BRANCH || echo "No [$DOC_DIR/$BRANCH] currently checked in; no problem."
         git add $DOC_DIR/$BRANCH
-        git commit -m 'Sync documentation from Code repo to Pages repo.'
+        git commit -m 'Sync documentation from Code repo to Pages repo.' || echo 'No changes: no problem.'
         git push origin main
