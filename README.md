@@ -23,4 +23,4 @@ Here is the online documentation for your immediate perusal.
   - `main` branch tip ([Flow-IPC documentation](./doc/flow-ipc/versions/main/index.html) |
                        [Flow documentation](./doc/flow/versions/main/index.html))
 
-Or you can locally view the same documentation locally by pointing your browser at the aforementioned locations in your checkout or unpacked tarball.
+Or you can locally view the same documentation locally by pointing your browser at the aforementioned locations in your checkout or unpacked tarball.  Or, upon clicking on a CI/CD pipeline run for [Flow-IPC](https://github.com/Flow-IPC/ipc/actions) or [Flow](https://github.com/Flow-IPC/flow/actions), one can download the artifact named `ipc-doc` or `flow-doc`, respectively.  It is a tarball containing the documentation; unpack it and point your browser at the result.
