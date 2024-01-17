@@ -1,5 +1,5 @@
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme
-title: [Flow-IPC Project]
-description: [Web site with Flow-IPC documentation and other matters]
+title: [Flow-IPC web site]
+description: [Flow-IPC is a comprehensive C++ toolkit for latency-free interprocess communication. Find online documentation and release links here.]
