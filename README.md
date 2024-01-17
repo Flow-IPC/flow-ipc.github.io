@@ -18,7 +18,7 @@ This [README in that repo](https://github.com/Flow-IPC/ipc/blob/main/README.md) 
 
 Here is the **Flow-IPC** online documentation for your immediate perusal (plus release links):
   - **Flow-IPC** branch `main` tip: [documentation](./doc/flow-ipc/versions/main/index.html)
-  - Release **Flow-IPC v1.0.0-rc1**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc1/index.html) / [release info](https://not.real.yet/to-do/v1.0.0-rc1)
+  - Release **Flow-IPC v1.0.0-rc1**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc1/index.html) \| [release info](https://not.real.yet/to-do/v1.0.0-rc1)
 
 [//]: # (massage_root_page.pl:Flow-IPC section END.)
 
@@ -31,7 +31,7 @@ Note: If you have a **Flow-IPC** release package (from above), you *do not need*
 [//]: # (massage_root_page.pl:Flow section BEGIN.)
 
 Here is the **Flow** online documentation for your immediate perusal (plus release links):
-  - `main` branch tip: [Flow documentation](./doc/flow/versions/main/index.html)
+  - **Flow** branch `main` tip: [documentation](./doc/flow/versions/main/index.html)
 
 [//]: # (massage_root_page.pl:Flow section END.)
 
