@@ -45,7 +45,7 @@ jobs:
         BRANCH=${{ env.version }}
         rm -rf $DOC_DIR/$BRANCH
         mkdir -p $DOC_DIR
-        cp -r ../src_repo/doc/ipc_doc $DOC_DIR/$BRANCH
+        cp -rv ../src_repo/doc/ipc_doc $DOC_DIR/$BRANCH
         # These values informally recommended in:
         #   https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
         git config user.name github-actions
