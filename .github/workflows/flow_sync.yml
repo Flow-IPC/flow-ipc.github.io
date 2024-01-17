@@ -1,6 +1,6 @@
 name: Flow sync-documentation pipeline
 
-# TODO: This is almost a copy/paste of ./flow-ipc-sync-doc.yml, just applied to different repo.
+# TODO: This is almost a copy/paste of ./flow_ipc_sync.yml, just applied to different repo.
 # Add some kind of code reuse ideally.  For now keeping comments light in this one, as it mirrors the other one.
 
 on:

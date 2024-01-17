@@ -1,5 +1,7 @@
 #!/usr/bin/perl
 
+# Context for this can be found, as of this writing, at least, in workflows/flow_ipc_sync.yml.
+
 use strict;
 use warnings;
 
@@ -28,6 +30,8 @@ sub main()
   {
     if ($massaging)
     {
+      # CAUTION!  Any change in lines like this in the target file <=> exact same change here.
+      # Otherwise things will break.
       my $ADDED = "  - Release **$product $version**: "
                   . "[documentation](./doc/flow-ipc/versions/$version/index.html) \\| "
                   . "[release info](https://github.com/Flow-IPC/ipc/releases/tag/$version)";
