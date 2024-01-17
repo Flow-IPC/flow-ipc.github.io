@@ -1,12 +1,12 @@
 # Welcome to Flow-IPC
 
-This site hosts up-to-date documentation and other release info for the **Flow-IPC** project.  The documentation found here is identical to that packaged in **Flow-IPC** and **Flow** release packages and source-control checkouts.
+This site hosts up-to-date documentation and release info for the **Flow-IPC** project.  The documentation found here is identical to that packaged in **Flow-IPC** and **Flow** release packages and source-control checkouts.
 
 ## Where to begin?
 
-The project lives in the `Flow-IPC` [organization at GitHub](https://github.com/Flow-IPC).  You can obtain it either via Git checkout (with submodules enabled) or by grabbing a release tarball.  To get your bearings as to the nature of the project please see the main repository, named `ipc`.  To wit:
+The project lives in the `Flow-IPC` [organization at GitHub](https://github.com/Flow-IPC).  You can obtain it either via Git checkout (with submodules enabled) or by grabbing a release package.  To get your bearings as to the nature of the project please see the main repository, named `ipc`.  To wit:
 
-This [README in that repo](https://github.com/Flow-IPC/ipc/blob/main/README.md) is a good place to start.  It might direct you back to this site, if you'd like to read online documentation.  That can be found below.
+The [README in that repo](https://github.com/Flow-IPC/ipc/blob/main/README.md) is a good place to start.  It might direct you back to this site, if you'd like to read online documentation.  That can be found below.
 
 ## Documentation and releases
 
@@ -38,15 +38,14 @@ Here is the **Flow** online documentation for your immediate perusal (plus relea
 
 ---
 
-Or you can locally view the same documentation locally by pointing your browser at the below-mentioned locations in your checkout or unpacked tarball.  Or, upon clicking on a CI/CD pipeline run for [Flow-IPC](https://github.com/Flow-IPC/ipc/actions) or [Flow](https://github.com/Flow-IPC/flow/actions), you can download the artifact named `ipc-doc` or `flow-doc`, respectively.  It is a tarball containing the documentation; unpack it and point your browser at the result.
+Or you can locally view the same documentation by pointing your browser at the below-mentioned locations in your checkout or unpacked package.  Or, upon clicking on a CI/CD pipeline run for [Flow-IPC](https://github.com/Flow-IPC/ipc/actions) or [Flow](https://github.com/Flow-IPC/flow/actions), you can download the artifact named `ipc-doc` or `flow-doc`, respectively.  It is a tarball containing the documentation; unpack it and point your browser at the result.
 
-Such documentation is generated directly from the source code automatically and is contained both:
+Such documentation is generated directly from the source code automatically and is stored as follows:
   - (for **Flow-IPC**) inside the checked-out repository `ipc` in the `doc/ipc_doc/` directory;
-    - (for **Flow**) inside the checked-out repository `ipc`: in the `flow/doc/flow_doc/` directory;
+    - (for **Flow**) inside the checked-out (with submodules) repository `ipc`: in the `flow/doc/flow_doc/` directory;
   - (for **Flow**) inside the checked-out repository `flow`: in the `doc/flow_doc/` directory;
   - online at this web site, as linked above.
 
 Both sets of documentation (in-repo and online) are generated/deployed automatically:
   - when the `main` branch of `ipc` or `flow` is updated, thus changing the source code of Flow-IPC or Flow respectively;
   - when the `main` branch of `ipc` or `flow` is tagged to mark a new release (e.g., `v1.2.3`) of Flow-IPC or Flow respectively.
-
