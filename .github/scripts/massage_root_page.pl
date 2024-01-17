@@ -14,9 +14,9 @@ sub main()
 
   my ($version, $file, $product) = @ARGV;
 
-  my $ADDED = "  - $product release $version: "
-              . "[documentation](./doc/flow-ipc/versions/$version/index.html) | "
-              . "[release info](https://not.real.yet/to-do/$version)";
+  my $ADDED = "  - Release **$product $version**: "
+              . "[documentation](./doc/flow-ipc/versions/$version/index.html) \\| "
+              . "[release info](https://not.real.yet/to-do/$version)"
 
   my $file_hndl;
   open($file_hndl, '<', $file) or die("Cannot open to read [$file]: error [$!].\n");
