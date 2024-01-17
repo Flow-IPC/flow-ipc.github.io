@@ -57,7 +57,7 @@ jobs:
       run: |
         # Replace Pages (destination) docs with copy of Code (source) docs.
         cd dst_repo
-        .github/scripts/massage_root_page.pl ${{ env.version }} README.md Flow-IPC
+        .github/scripts/massage_root_page.pl ${{ env.version }} README.md Flow-IPC ipc
         git add README.md # If no changes then this is successful no-op.
         echo 'Having possibly modified README.md, here are the differences if any.'
         echo '[[[ diff--'

@@ -10,13 +10,11 @@ main();
 sub main()
 {
   my $MAIN = 'main';
-  (@ARGV >= 3) or die("Usage: \$0 <version> <target root page file> <product name: e.g.: `Flow-IPC` or `Flow`>\n");
+  (@ARGV >= 4) or die("Usage: \$0 <version> <target root page file> "
+                      . "<product name: e.g.: `Flow-IPC` or `Flow`> "
+                      . "<repo name: e.g.: `ipc` or `flow`>\n");
 
-  my ($version, $file, $product) = @ARGV;
-
-  my $ADDED = "  - Release **$product $version**: "
-              . "[documentation](./doc/flow-ipc/versions/$version/index.html) \\| "
-              . "[release info](https://not.real.yet/to-do/$version)";
+  my ($version, $file, $product, $repo) = @ARGV;
 
   my $file_hndl;
   open($file_hndl, '<', $file) or die("Cannot open to read [$file]: error [$!].\n");
@@ -30,6 +28,10 @@ sub main()
   {
     if ($massaging)
     {
+      my $ADDED = "  - Release **$product $version**: "
+                  . "[documentation](./doc/flow-ipc/versions/$version/index.html) \\| "
+                  . "[release info](https://github.com/Flow-IPC/ipc/releases/tag/$version)";
+
       if ($line =~ /massage_root_page\.pl:$product section END/)
       {
         $massaging = 0;
