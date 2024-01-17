@@ -67,6 +67,7 @@ jobs:
     - name: Check-in modifications (if any) to Pages (destination) repo
       run: |
         # Check-in modifications (if any) to Pages (destination) repo.
+        cd dst_repo
         git commit -m 'Sync documentation from Code repo to Pages repo.  Possibly update root-page links.' \
           || { echo 'No changes: no problem.'; exit 0; }
         git push origin main
