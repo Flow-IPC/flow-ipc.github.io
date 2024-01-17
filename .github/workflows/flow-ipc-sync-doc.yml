@@ -7,24 +7,34 @@ on:
     types: [flow-ipc-sync-doc-event]
   # To create the button that runs a workflow manually:
   workflow_dispatch:
+    inputs:
+      version:
+        description: 'Branch or Tag name (e.g.: `main`, `vA.B.C`); can also be specified as API parameter.'
+        required: false
+        default: 'main'
 
 jobs:
   update-docs:
     runs-on: ubuntu-latest
-
+    env:
+      version: ${{ github.event.inputs.version || github.event.client_payload.version || 'main' }}
     steps:
 
     - name: Checkout Pages repo (the destination)
       uses: actions/checkout@v4
       with:
         path: 'dst_repo'
-        sparse-checkout: 'doc/flow-ipc/versions'
+        sparse-checkout: |
+          doc/flow-ipc/versions
+          .github/scripts
+          README.md
 
     - name: Checkout Code repo (the source)
       uses: actions/checkout@v4
       with:
         repository: 'Flow-IPC/ipc'
         path: 'src_repo'
+        ref: ${{ env.version }}
         sparse-checkout: 'doc/ipc_doc'
 
     - name: Replace Pages (destination) docs with copy of Code (source) docs
@@ -32,7 +42,7 @@ jobs:
         # Replace Pages (destination) docs with copy of Code (source) docs.
         cd dst_repo
         DOC_DIR=doc/flow-ipc/versions
-        BRANCH=main
+        BRANCH=${{ env.version }}
         rm -rf $DOC_DIR/$BRANCH
         mkdir -p $DOC_DIR
         cp -r ../src_repo/doc/ipc_doc $DOC_DIR/$BRANCH
@@ -42,5 +52,21 @@ jobs:
         git config user.email github-actions@github.com
         git rm -r --cached $DOC_DIR/$BRANCH || echo "No [$DOC_DIR/$BRANCH] currently checked in; no problem."
         git add $DOC_DIR/$BRANCH
-        git commit -m 'Sync documentation from Code repo to Pages repo.' || echo 'No changes: no problem.'
+
+    - name: Update root page to link to those docs/release (if it is a new release)
+      run: |
+        # Replace Pages (destination) docs with copy of Code (source) docs.
+        cd dst_repo
+        .github/scripts/massage_root_page.pl ${{ env.version }} README.md Flow-IPC
+        git add README.md # If no changes then this is successful no-op.
+        echo 'Having possibly modified README.md, here are the differences if any.'
+        echo '[[[ diff--'
+        git diff README.md
+        echo '--diff ]]]'
+
+    - name: Check-in modifications (if any) to Pages (destination) repo
+      run: |
+        # Check-in modifications (if any) to Pages (destination) repo.
+        git commit -m 'Sync documentation from Code repo to Pages repo.' \
+          || { echo 'No changes: no problem.'; exit 0; }
         git push origin main
