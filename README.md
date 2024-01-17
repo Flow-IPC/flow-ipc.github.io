@@ -23,7 +23,7 @@ Here is the **Flow-IPC** online documentation for your immediate perusal (plus r
 
 ---
 
-Note: If you have a **Flow-IPC** release package (from above), you *do not need* a **Flow** package (from below): it's already included.  The online Flow *documentation* links and release notes may be of interest.
+Note: If you have a **Flow-IPC** release package (from above), you *do not need* a **Flow** package (from below): it's already included.  The online Flow *documentation links and release notes* may be of interest, though.
 
 ---
 
