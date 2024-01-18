@@ -1,4 +1,6 @@
-name: Flow-IPC sync-documentation pipeline
+name: Flow-IPC sync-docs/releases pipeline
+
+# See also flow_sync.yml.
 
 on:
   # An API request can trigger us; so Code (source) repo can invoke us after generating docs and checking those
@@ -20,6 +22,8 @@ jobs:
       version: ${{ github.event.inputs.version || github.event.client_payload.version || 'main' }}
     steps:
 
+    # Write access is required later, so at least 1 way to allow it is under Settings/Actions/General
+    # set "Workflow permissions" to "Read and write permissions" (may need similar org-wide change first).
     - name: Checkout Pages repo (the destination)
       uses: actions/checkout@v4
       with:

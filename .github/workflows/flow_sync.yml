@@ -1,7 +1,6 @@
-name: Flow sync-documentation pipeline
+name: Flow sync-docs/releases pipeline
 
-# TODO: This is almost a copy/paste of ./flow_ipc_sync.yml, just applied to different repo.
-# Add some kind of code reuse ideally.  For now keeping comments light in this one, as it mirrors the other one.
+# TODO: This is almost a copy/paste of ./flow_ipc_sync.yml, just applied to different repo.  Add code reuse ideally.
 
 on:
   # An API request can trigger us; so Code (source) repo can invoke us after generating docs and checking those
@@ -10,11 +9,17 @@ on:
     types: [flow-sync-doc-event]
   # To create the button that runs a workflow manually:
   workflow_dispatch:
+    inputs:
+      version:
+        description: 'Branch or Tag name (e.g.: `main`, `vA.B.C`); can also be specified as API parameter.'
+        required: false
+        default: 'main'
 
 jobs:
   update-docs:
     runs-on: ubuntu-latest
-
+    env:
+      version: ${{ github.event.inputs.version || github.event.client_payload.version || 'main' }}
     steps:
 
     # Write access is required later, so at least 1 way to allow it is under Settings/Actions/General
@@ -23,13 +28,17 @@ jobs:
       uses: actions/checkout@v4
       with:
         path: 'dst_repo'
-        sparse-checkout: 'doc/flow/versions'
+        sparse-checkout: |
+          doc/flow/versions
+          .github/scripts
+          README.md
 
     - name: Checkout Code repo (the source)
       uses: actions/checkout@v4
       with:
         repository: 'Flow-IPC/flow'
         path: 'src_repo'
+        ref: ${{ env.version }}
         sparse-checkout: 'doc/flow_doc'
 
     - name: Replace Pages (destination) docs with copy of Code (source) docs
@@ -37,7 +46,7 @@ jobs:
         # Replace Pages (destination) docs with copy of Code (source) docs.
         cd dst_repo
         DOC_DIR=doc/flow/versions
-        BRANCH=main
+        BRANCH=${{ env.version }}
         rm -rf $DOC_DIR/$BRANCH
         mkdir -p $DOC_DIR
         cp -rv ../src_repo/doc/flow_doc $DOC_DIR/$BRANCH
@@ -47,5 +56,22 @@ jobs:
         git config user.email github-actions@github.com
         git rm -r --cached $DOC_DIR/$BRANCH || echo "No [$DOC_DIR/$BRANCH] currently checked in; no problem."
         git add $DOC_DIR/$BRANCH
-        git commit -m 'Sync documentation from Code repo to Pages repo.' || echo 'No changes: no problem.'
+
+    - name: Update root page to link to those docs/release (if it is a new release)
+      run: |
+        # Replace Pages (destination) docs with copy of Code (source) docs.
+        cd dst_repo
+        .github/scripts/massage_root_page.pl ${{ env.version }} README.md Flow flow
+        git add README.md # If no changes then this is successful no-op.
+        echo 'Having possibly modified README.md, here are the differences if any.'
+        echo '[[[ diff--'
+        git diff --cached README.md
+        echo '--diff ]]]'
+
+    - name: Check-in modifications (if any) to Pages (destination) repo
+      run: |
+        # Check-in modifications (if any) to Pages (destination) repo.
+        cd dst_repo
+        git commit -m 'Sync documentation from Code repo to Pages repo.  Possibly update root-page links.' \
+          || { echo 'No changes: no problem.'; exit 0; }
         git push origin main
