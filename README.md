@@ -37,6 +37,7 @@ Note: If you have a **Flow-IPC** release package (from above), you *do not need*
 Here is the **Flow** online documentation for your immediate perusal (plus release links):
   - **Flow** branch `main` tip: [documentation](./doc/flow/versions/main/index.html)
   - Release **Flow v1.0.0-rc1**: [documentation](./doc/flow/versions/v1.0.0-rc1/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.0-rc1)
+  - Release **Flow v1.0.0-rc2**: [documentation](./doc/flow/versions/v1.0.0-rc2/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.0-rc2)
 
 [//]: # (massage_root_page.pl:Flow section END.)
 
