@@ -13,9 +13,10 @@ The [README in that repo](https://github.com/Flow-IPC/ipc/blob/main/README.md) i
 [//]: # (This is a comment.  A blank line before and after a comment block like this is mandatory.)
 [//]: # ()
 [//]: # (The following section is edited by .github/scripts/massage_root_page.pl script.  If editing manually you must)
-[//]: # (exercise great caution to remain compatible with that script.  As of this writing you *can* delete "Release")
-[//]: # (lines, and you can re-order them; and within reason you can edit non-"Release" lines.  Any other change,)
-[//]: # (including changing wording, spacing, etc., of "Release" lines <=> likely change of aforementioned script.)
+[//]: # (exercise great caution to remain compatible with that script.  As of this writing you -can- delete Release)
+[//]: # (lines, and you can re-order them; and within reason you can edit non-Release lines.  Any other change,)
+[//]: # (including changing wording, spacing, etc., of Release lines implies likely change of aforementioned script.)
+[//]: # ()
 [//]: # (massage_root_page.pl:Flow-IPC section BEGIN.)
 
 Here is the **Flow-IPC** online documentation for your immediate perusal (plus release links):
