@@ -16,7 +16,7 @@ on:
         default: 'main'
 
 jobs:
-  update-docs:
+  update-docs-releases:
     runs-on: ubuntu-latest
     env:
       version: ${{ github.event.inputs.version || github.event.client_payload.version || 'main' }}
