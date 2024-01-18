@@ -17,6 +17,7 @@ sub main()
                       . "<repo name: e.g.: `ipc` or `flow`>\n");
 
   my ($version, $file, $product, $repo) = @ARGV;
+  my $product_lc = lc($product);
 
   my $file_hndl;
   open($file_hndl, '<', $file) or die("Cannot open to read [$file]: error [$!].\n");
@@ -33,8 +34,8 @@ sub main()
       # CAUTION!  Any change in lines like this in the target file <=> exact same change here.
       # Otherwise things will break.
       my $ADDED = "  - Release **$product $version**: "
-                  . "[documentation](./doc/flow-ipc/versions/$version/index.html) \\| "
-                  . "[release info](https://github.com/Flow-IPC/ipc/releases/tag/$version)";
+                  . "[documentation](./doc/$product_lc/versions/$version/index.html) \\| "
+                  . "[release info](https://github.com/Flow-IPC/$repo/releases/tag/$version)";
 
       if ($line =~ /massage_root_page\.pl:$product section END/)
       {
