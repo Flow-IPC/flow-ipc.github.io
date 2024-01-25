@@ -29,6 +29,7 @@ Here is the **Flow-IPC** online documentation for your immediate perusal (plus r
   - Release **Flow-IPC v1.0.0-rc12**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc12/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc12)
   - Release **Flow-IPC v1.0.0-rc13**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc13/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc13)
   - Release **Flow-IPC v1.0.0-rc14**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc14/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc14)
+  - Release **Flow-IPC v1.0.0-rc15**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc15/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc15)
 
 [//]: # (massage_root_page.pl:Flow-IPC section END.)
 
