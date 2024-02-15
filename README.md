@@ -6,7 +6,9 @@ This site hosts up-to-date documentation and release info for the **Flow-IPC** p
 
 The project lives in the `Flow-IPC` [organization at GitHub](https://github.com/Flow-IPC).  You can obtain it either via Git checkout (with submodules enabled) or by grabbing a release package.  To get your bearings as to the nature of the project please see the main repository, named `ipc`.  To wit:
 
-The [README in that repo](https://github.com/Flow-IPC/ipc/blob/main/README.md) is a good place to start.  It might direct you back to this site, if you'd like to read online documentation and/or peruse or obtain a particular version of the product.  Those resources can be found below.
+The [README in that repo](https://github.com/Flow-IPC/ipc/blob/main/README.md) is a good place to start.  It might direct you back to this site, if you'd like to read online documentation and/or peruse or obtain a particular version of the product.  Those resources can be found below.  So to summarize:
+  - Flow-IPC "base of operations" is the GitHub organization (especially `ipc` repo) linked here.
+  - The web site you're reading, at this time, merely hosts online documentation and release links for your convenience.
 
 ## Documentation and releases
 
