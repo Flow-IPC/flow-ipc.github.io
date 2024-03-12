@@ -57,6 +57,7 @@ Here is the **Flow** online documentation for your immediate perusal (plus relea
   - Release **Flow v1.0.0-rc8**: [documentation](./doc/flow/versions/v1.0.0-rc8/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.0-rc8)
   - Release **Flow v1.0.0-rc9**: [documentation](./doc/flow/versions/v1.0.0-rc9/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.0-rc9)
   - Release **Flow v1.0.0-rc11**: [documentation](./doc/flow/versions/v1.0.0-rc11/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.0-rc11)
+  - Release **Flow v1.0.0-rc12**: [documentation](./doc/flow/versions/v1.0.0-rc12/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.0-rc12)
 
 [//]: # (massage_root_page.pl:Flow section END.)
 
