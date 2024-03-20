@@ -23,23 +23,6 @@ The [README in that repo](https://github.com/Flow-IPC/ipc/blob/main/README.md) i
 
 Here is the **Flow-IPC** online documentation for your immediate perusal (plus release links):
   - **Flow-IPC** branch `main` tip: [documentation](./doc/flow-ipc/versions/main/index.html)
-  - Release **Flow-IPC v1.0.0-rc1**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc1/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc1)
-  - Release **Flow-IPC v1.0.0-rc2**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc2/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc2)
-  - Release **Flow-IPC v1.0.0-rc6**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc6/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc6)
-  - Release **Flow-IPC v1.0.0-rc7**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc7/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc7)
-  - Release **Flow-IPC v1.0.0-rc9**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc9/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc9)
-  - Release **Flow-IPC v1.0.0-rc12**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc12/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc12)
-  - Release **Flow-IPC v1.0.0-rc13**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc13/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc13)
-  - Release **Flow-IPC v1.0.0-rc14**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc14/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc14)
-  - Release **Flow-IPC v1.0.0-rc15**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc15/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc15)
-  - Release **Flow-IPC v1.0.0-rc16**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc16/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc16)
-  - Release **Flow-IPC v1.0.0-rc17**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc17/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc17)
-  - Release **Flow-IPC v1.0.0-rc18**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc18/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc18)
-  - Release **Flow-IPC v1.0.0-rc19**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc19/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc19)
-  - Release **Flow-IPC v1.0.0-rc20**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc20/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc20)
-  - Release **Flow-IPC v1.0.0-rc21**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc21/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc21)
-  - Release **Flow-IPC v1.0.0-rc22**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc22/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc22)
-  - Release **Flow-IPC v1.0.0-rc23**: [documentation](./doc/flow-ipc/versions/v1.0.0-rc23/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0-rc23)
   - Release **Flow-IPC v1.0.0**: [documentation](./doc/flow-ipc/versions/v1.0.0/index.html) \| [release info](https://github.com/Flow-IPC/ipc/releases/tag/v1.0.0)
 
 [//]: # (massage_root_page.pl:Flow-IPC section END.)
@@ -54,13 +37,6 @@ Note: If you have a **Flow-IPC** release package (from above), you *do not need*
 
 Here is the **Flow** online documentation for your immediate perusal (plus release links):
   - **Flow** branch `main` tip: [documentation](./doc/flow/versions/main/index.html)
-  - Release **Flow v1.0.0-rc1**: [documentation](./doc/flow/versions/v1.0.0-rc1/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.0-rc1)
-  - Release **Flow v1.0.0-rc2**: [documentation](./doc/flow/versions/v1.0.0-rc2/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.0-rc2)
-  - Release **Flow v1.0.0-rc7**: [documentation](./doc/flow/versions/v1.0.0-rc7/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.0-rc7)
-  - Release **Flow v1.0.0-rc8**: [documentation](./doc/flow/versions/v1.0.0-rc8/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.0-rc8)
-  - Release **Flow v1.0.0-rc9**: [documentation](./doc/flow/versions/v1.0.0-rc9/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.0-rc9)
-  - Release **Flow v1.0.0-rc11**: [documentation](./doc/flow/versions/v1.0.0-rc11/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.0-rc11)
-  - Release **Flow v1.0.0-rc12**: [documentation](./doc/flow/versions/v1.0.0-rc12/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.0-rc12)
 
 [//]: # (massage_root_page.pl:Flow section END.)
 
