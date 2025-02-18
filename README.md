@@ -41,6 +41,7 @@ Here is the **Flow** online documentation for your immediate perusal (plus relea
   - **Flow** branch `main` tip: [documentation](./doc/flow/versions/main/index.html)
   - Release **Flow v1.0.0**: [documentation](./doc/flow/versions/v1.0.0/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.0)
   - Release **Flow v1.0.1**: [documentation](./doc/flow/versions/v1.0.1/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.1)
+  - Release **Flow v1.0.2**: [documentation](./doc/flow/versions/v1.0.2/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v1.0.2)
   - Release **Flow v2.0.0**: [documentation](./doc/flow/versions/v2.0.0/index.html) \| [release info](https://github.com/Flow-IPC/flow/releases/tag/v2.0.0)
 
 [//]: # (massage_root_page.pl:Flow section END.)
