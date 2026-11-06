@@ -1,0 +1,21 @@
+<map id="flow::net_flow::Low_lvl_packet" name="flow::net_flow::Low_lvl_packet">
+<area shape="rect" id="node1" title="Internal net_flow struct that encapsulates the Flow&#45;protocol low&#45;level packet structure and serves as..." alt="" coords="1192,369,1319,405"/>
+<area shape="rect" id="node2" href="$classflow_1_1util_1_1Null__interface.html" title="An empty interface, consisting of nothing but a default virtual destructor, intended as a boiler&#45;plat..." alt="" coords="149,5,301,29"/>
+<area shape="rect" id="node5" href="$classflow_1_1log_1_1Logger.html" title="Interface that the user should implement, passing the implementing Logger into logging classes (Flow&#39;..." alt="" coords="495,120,610,144"/>
+<area shape="rect" id="node3" href="$classflow_1_1util_1_1Shared__ptr__alias__holder.html" title=" " alt="" coords="789,173,995,221"/>
+<area shape="rect" id="node4" href="$classflow_1_1log_1_1Log__context.html" title="Convenience class that simply stores a Logger and/or Component passed into a constructor; and returns..." alt="" coords="821,245,963,269"/>
+<area shape="rect" id="node6" href="$classflow_1_1util_1_1Unique__id__holder.html" title="Each object of this class stores (at construction) and returns (on demand) a numeric ID unique from a..." alt="" coords="167,54,283,90"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,60,72,84"/>
+<area shape="rect" id="node8" title=" " alt="" coords="159,299,291,323"/>
+<area shape="rect" id="node18" href="$structflow_1_1net__flow_1_1Low__lvl__packet_1_1Aux__raw__data.html" title="Helper data store type for storing binary data needed by serialize_to_raw_data(), when certains bits ..." alt="" coords="810,657,974,693"/>
+<area shape="rect" id="node9" title=" " alt="" coords="164,114,287,150"/>
+<area shape="rect" id="node10" href="$classflow_1_1log_1_1Component.html" title="A light&#45;weight class, each object storing a component payload encoding an enum value from enum type o..." alt="" coords="483,245,623,269"/>
+<area shape="rect" id="node11" title=" " alt="" coords="169,175,282,199"/>
+<area shape="rect" id="node12" title=" " alt="" coords="180,251,271,275"/>
+<area shape="rect" id="node13" href="$classbool.html" title=" " alt="" coords="869,344,915,368"/>
+<area shape="rect" id="node14" title=" " alt="" coords="519,453,586,477"/>
+<area shape="rect" id="node15" title=" " alt="" coords="819,464,965,488"/>
+<area shape="rect" id="node16" href="$classflow_1_1Function.html" title=" " alt="" coords="800,513,984,549"/>
+<area shape="rect" id="node17" title=" " alt="" coords="814,573,970,633"/>
+<area shape="rect" id="node19" title=" " alt="" coords="529,613,576,637"/>
+</map>
