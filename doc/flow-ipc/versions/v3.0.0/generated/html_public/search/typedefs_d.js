@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['peer_0',['Peer',['../classipc_1_1transport_1_1sync__io_1_1Native__socket__stream__acceptor.html#a6a635d61ded08e27d9ce97c38942d6d0',1,'ipc::transport::sync_io::Native_socket_stream_acceptor::Peer()'],['../classipc_1_1transport_1_1Native__socket__stream__acceptor.html#a3707eaee28b6bacded15ba4cdab3da48',1,'ipc::transport::Native_socket_stream_acceptor::Peer()']]],
+  ['peer_5fsocket_1',['Peer_socket',['../namespaceipc_1_1transport_1_1asio__local__stream__socket.html#a136cd3f0fecfeb572962630c4e6bcce8',1,'ipc::transport::asio_local_stream_socket']]],
+  ['permissions_2',['Permissions',['../namespaceipc_1_1util.html#a1b398ae730d1e6040687cb2397115152',1,'ipc::util']]],
+  ['pointer_3',['Pointer',['../classipc_1_1shm_1_1arena__lend_1_1jemalloc_1_1Ipc__arena.html#abeb1e23676a8f3cc8378b74101fc3e31',1,'ipc::shm::arena_lend::jemalloc::Ipc_arena']]],
+  ['pointer_4',['pointer',['../classipc_1_1shm_1_1stl_1_1Stateless__allocator.html#a125f5577dfb56892d0c72c0d0e918e5b',1,'ipc::shm::stl::Stateless_allocator']]],
+  ['pointer_5',['Pointer',['../classipc_1_1shm_1_1arena__lend_1_1Borrower__allocator__arena.html#a14d0ef744ca77cd5f828c1ddc43cfbab',1,'ipc::shm::arena_lend::Borrower_allocator_arena::Pointer()'],['../classipc_1_1shm_1_1classic_1_1Pool__arena.html#a07fec7ff0ba494dca0f0a010270cc35f',1,'ipc::shm::classic::Pool_arena::Pointer()'],['../classipc_1_1shm_1_1stl_1_1Stateless__allocator.html#adc25b1b706ac6af3f320d5318e951110',1,'ipc::shm::stl::Stateless_allocator::Pointer()']]],
+  ['pool_5fstats_6',['Pool_stats',['../classipc_1_1shm_1_1arena__lend_1_1jemalloc_1_1Ipc__arena.html#a94b1f210b66c440f56c445d1daa75ceb',1,'ipc::shm::arena_lend::jemalloc::Ipc_arena']]],
+  ['posix_5fmq_5freceiver_7',['Posix_mq_receiver',['../namespaceipc_1_1transport_1_1sync__io.html#a84b0e915da5f820cf6e89aa21c6925a0',1,'ipc::transport::sync_io::Posix_mq_receiver()'],['../namespaceipc_1_1transport.html#a3adeb04565914b4b54e41cd3840e1527',1,'ipc::transport::Posix_mq_receiver()']]],
+  ['posix_5fmq_5fsender_8',['Posix_mq_sender',['../namespaceipc_1_1transport.html#af0f375d61e295ddd19a31a69955343f1',1,'ipc::transport::Posix_mq_sender()'],['../namespaceipc_1_1transport_1_1sync__io.html#a5d20c78a07e5db1b1f1ce4271edf27c6',1,'ipc::transport::sync_io::Posix_mq_sender()']]],
+  ['posix_5fmqs_5fchannel_5fof_5fblobs_9',['Posix_mqs_channel_of_blobs',['../namespaceipc_1_1transport.html#a9408a46c8565a42c537a02c9c11d5b1b',1,'ipc::transport::Posix_mqs_channel_of_blobs()'],['../namespaceipc_1_1transport_1_1sync__io.html#add71694105c85fca3fabb84845485c68',1,'ipc::transport::sync_io::Posix_mqs_channel_of_blobs()']]],
+  ['posix_5fmqs_5fsocket_5fstream_5fchannel_10',['Posix_mqs_socket_stream_channel',['../namespaceipc_1_1transport.html#a8259bc93cc6a52fe192cf56196f32417',1,'ipc::transport::Posix_mqs_socket_stream_channel()'],['../namespaceipc_1_1transport_1_1sync__io.html#ae3271e118e027ead7f3d82f5ee7a8c36',1,'ipc::transport::sync_io::Posix_mqs_socket_stream_channel()']]],
+  ['process_5fid_5ft_11',['process_id_t',['../namespaceipc_1_1util.html#a0c44028a45451ebf21f6af8e806b2682',1,'ipc::util']]],
+  ['proto_5fver_5ft_12',['proto_ver_t',['../classipc_1_1transport_1_1Protocol__negotiator.html#a35fb3885d39f11d0c1f7860e64194592',1,'ipc::transport::Protocol_negotiator']]],
+  ['protocol_13',['Protocol',['../classipc_1_1transport_1_1Native__socket__stream__cfg.html#aa0cf2d429b1e8b6c90a61b3c0710eb53',1,'ipc::transport::Native_socket_stream_cfg']]],
+  ['protocol_5fbyte_5fstream_14',['Protocol_byte_stream',['../namespaceipc_1_1transport_1_1asio__local__stream__socket.html#a9812c19326f757f90e65dbcc47263b9b',1,'ipc::transport::asio_local_stream_socket']]],
+  ['protocol_5fpkt_5fstream_15',['Protocol_pkt_stream',['../namespaceipc_1_1transport_1_1asio__local__stream__socket.html#a791e91e9c2cdca1a7fe8b5aeb9d06d30',1,'ipc::transport::asio_local_stream_socket']]],
+  ['ptr_16',['Ptr',['../classipc_1_1transport_1_1struc_1_1shm_1_1rpc_1_1Server__context.html#a4b7d8f7374a66f9cfe7d651ca2338ac1',1,'ipc::transport::struc::shm::rpc::Server_context']]]
+];
