@@ -1,0 +1,4 @@
+<map id="flow::util::schedule_task_from_now" name="flow::util::schedule_task_from_now">
+<area shape="rect" id="node1" title="Schedule the given function to execute in a certain amount of time: A handy wrapper around Timer (asi..." alt="" coords="5,5,132,41"/>
+<area shape="rect" id="node2" href="$classflow_1_1util_1_1Unique__id__holder.html#a50489177a7731618ca130468c3872748" title="Short&#45;hand for Unique_id_holder().unique_id(); useful when all you want is the unique integer itself." alt="" coords="180,5,359,41"/>
+</map>
