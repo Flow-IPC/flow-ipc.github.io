@@ -1,0 +1,11 @@
+<map id="ipc::transport::Bipc_mq_handle" name="ipc::transport::Bipc_mq_handle">
+<area shape="rect" id="node1" title="Implements the Persistent_mq_handle concept by thinly wrapping bipc::message_queue,..." alt="" coords="797,191,924,227"/>
+<area shape="rect" id="node2" title=" " alt="" coords="462,5,605,29"/>
+<area shape="rect" id="node3" href="$classipc_1_1util_1_1Shared__name.html" title="String&#45;wrapping abstraction representing a name uniquely distinguishing a kernel&#45;persistent entity fr..." alt="" coords="460,173,607,197"/>
+<area shape="rect" id="node4" href="$classsize__t.html" title=" " alt="" coords="217,125,270,149"/>
+<area shape="rect" id="node5" title=" " alt="" coords="176,173,311,197"/>
+<area shape="rect" id="node6" title=" " alt="" coords="204,221,283,245"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,215,127,251"/>
+<area shape="rect" id="node8" title=" " alt="" coords="510,231,557,255"/>
+<area shape="rect" id="node9" title=" " alt="" coords="447,279,620,315"/>
+</map>

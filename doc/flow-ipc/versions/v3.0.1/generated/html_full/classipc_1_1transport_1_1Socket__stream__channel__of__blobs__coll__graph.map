@@ -1,0 +1,13 @@
+<map id="ipc::transport::Socket_stream_channel_of_blobs&lt; SIO &gt;" name="ipc::transport::Socket_stream_channel_of_blobs&lt; SIO &gt;">
+<area shape="rect" id="node1" title="A Channel with a blobs pipe only (no handles pipe) that uses a Unix domain socket connection as the u..." alt="" coords="812,267,977,315"/>
+<area shape="rect" id="node2" href="$classipc_1_1transport_1_1Channel.html" title=" " alt="" coords="547,237,763,345"/>
+<area shape="rect" id="node3" title=" " alt="" coords="183,9,326,33"/>
+<area shape="rect" id="node4" title=" " alt="" coords="187,137,322,161"/>
+<area shape="rect" id="node5" href="$classsize__t.html" title=" " alt="" coords="228,198,281,222"/>
+<area shape="rect" id="node6" title=" " alt="" coords="215,246,294,270"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,240,127,276"/>
+<area shape="rect" id="node8" title=" " alt="" coords="181,295,328,331"/>
+<area shape="rect" id="node9" title=" " alt="" coords="179,355,331,391"/>
+<area shape="rect" id="node10" title=" " alt="" coords="176,415,333,451"/>
+<area shape="rect" id="node11" title=" " alt="" coords="176,475,333,511"/>
+</map>

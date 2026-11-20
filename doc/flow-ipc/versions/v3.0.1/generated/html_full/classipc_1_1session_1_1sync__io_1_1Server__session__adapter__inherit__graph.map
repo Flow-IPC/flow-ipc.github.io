@@ -1,0 +1,5 @@
+<map id="ipc::session::sync_io::Server_session_adapter&lt; Session &gt;" name="ipc::session::sync_io::Server_session_adapter&lt; Session &gt;">
+<area shape="rect" id="node1" title="sync_io&#45;pattern counterpart to async&#45;I/O&#45;pattern session::Server_session types and all their SHM&#45;awar..." alt="" coords="83,101,221,149"/>
+<area shape="rect" id="node2" href="$classipc_1_1session_1_1sync__io_1_1Session__adapter.html" title="Internal&#45;use workhorse containing common elements of Client_session_adapter and Server_session_adapte..." alt="" coords="5,5,141,53"/>
+<area shape="rect" id="node3" title=" " alt="" coords="166,17,298,41"/>
+</map>
